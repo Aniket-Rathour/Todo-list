@@ -22,7 +22,7 @@ export function CreateTodo(){
             <option value="true">true</option>
         </select>
         <button onClick={function(){
-            fetch("http://localhost:3000/todo" ,{
+            fetch("https://todo-backend-chy7.onrender.com/todo" ,{
                 method:"POST",
                 body:JSON.stringify({ // JSON will be captial
                     title:title,

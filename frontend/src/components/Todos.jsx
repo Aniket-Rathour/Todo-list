@@ -6,7 +6,7 @@ export function Todos({todos}){
                     <h1>{todo.title}</h1>
                     <h2>{todo.description}</h2>
                     <button onClick={(function(){
-                        fetch("http://localhost:3000/complete" , {
+                        fetch("https://todo-backend-chy7.onrender.com/complete" , {
                             method:"PUT",
                             headers: {"Content-Type": "application/json",},
                             body:JSON.stringify({
