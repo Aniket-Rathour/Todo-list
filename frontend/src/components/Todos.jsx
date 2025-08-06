@@ -14,7 +14,7 @@ export function Todos({todos}){
                             })
                         })
                     })}>{todo.completed ===true? "completed":"Mark as complete"}</button>
-                    <div>........................................................................</div>
+                    <hr/>
                 </div>
             })
         }
