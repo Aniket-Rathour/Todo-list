@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
 
-export function CreateTodo(){
+export function CreateTodo({setUpdate, update}){
     const [title , setTitle] = useState("")
     const [description , setDescription] = useState("")
     //const [compleated , setCompleated] = useState("")
@@ -28,6 +28,7 @@ export function CreateTodo(){
                 }),
                 headers: {"Content-Type": "application/json"}
             })
+            setUpdate(!update)
         }}>Add a todo</button>
     </div>
 }
