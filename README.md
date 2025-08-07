@@ -10,7 +10,7 @@ A minimal yet powerful **Todo List REST API**, designed for simplicity, security
 > 🛠 **Connected to a secure backend** hosted via Render  
 > ✅ Try it out live – no setup required!
 
----
+---  
 
 ## 🔧 Overview
 
