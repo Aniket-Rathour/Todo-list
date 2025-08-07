@@ -1,7 +1,7 @@
 export function Todos({todos}){
     return <div>
         {
-            todos.map(function(todo){
+            todos.map(function({todo,setUpdate, update}){
                 return <div  key={todo._id}>
                     <h1>{todo.title}</h1>
                     <h2>{todo.description}</h2>
@@ -13,6 +13,7 @@ export function Todos({todos}){
                                 id:todo._id,
                             })
                         })
+                        setUpdate(!update)
                     })}>{todo.completed ===true? "completed":"Mark as complete"}</button>
                     <hr/>
                 </div>
