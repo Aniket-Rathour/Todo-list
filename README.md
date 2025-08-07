@@ -1,14 +1,17 @@
-# 🚀📝 **Todo List API**
+# [🚀📝 **Todo List API**](https://todo-list-ecru-theta-40.vercel.app)
 
 A minimal yet powerful **Todo List REST API**, designed for simplicity, security, and scalability.
 
 ---
 
-## 🌐🔥 [👉 Live Project (Frontend) – Click Here to View 👈](https://todo-list-ecru-theta-40.vercel.app)
+## 🌐🔥 [👉 Live Project < – Click Here to View 👈](https://todo-list-ecru-theta-40.vercel.app)
 
 > 🟢 **Deployed Frontend** built with React  
 > 🛠 **Connected to a secure backend** hosted via Render  
 > ✅ Try it out live – no setup required!
+> 
+> ⏳ **Note**: Due to free-tier hosting on Render, the **backend may take up to 20 seconds** to respond on the **first request** (cold start). After that, it's fast and responsive.
+
 
 ---  
 
