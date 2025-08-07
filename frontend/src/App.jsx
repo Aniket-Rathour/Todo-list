@@ -19,7 +19,7 @@ function App() {
       <CreateTodo></CreateTodo>
       <Todos todos ={todos}></Todos>
     </div>
-  )
+  )    
 }
 
 export default App
