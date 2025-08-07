@@ -14,7 +14,7 @@ export function CreateTodo(){
             setDescription(e.target.value);
         }}></input><div></div>
 
-        <select id="select" value={selectedOption} onChange={(e) => setSelectedOption(e.target.value)}>
+        <select id="select" value={selectedOption.toString()} onChange={(e) => setSelectedOption(e.target.value ==="true")}>
             <option value="false">false</option>
             <option value="true">true</option>
         </select>
@@ -24,7 +24,7 @@ export function CreateTodo(){
                 body:JSON.stringify({ // JSON will be captial
                     title:title,
                     description:description,
-                    completed:selectedOption ==="true"
+                    completed:selectedOption
                 }),
                 headers: {"Content-Type": "application/json"}
             })
