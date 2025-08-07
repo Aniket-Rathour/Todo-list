@@ -6,23 +6,20 @@ export function CreateTodo(){
     const [description , setDescription] = useState("")
     //const [compleated , setCompleated] = useState("")
     const [selectedOption, setSelectedOption] = useState("");
-    const handleChange = (event) => {
-    setSelectedOption(event.target.value);
-  };
     return <div>
         <input type="text" placeholder="title" onChange={function(e){
             setTitle(e.target.value);
         }}></input><div></div>
-        <input type="description" placeholder="description" onChange={function(e){
+        <input type="text" placeholder="description" onChange={function(e){
             setDescription(e.target.value);
         }}></input><div></div>
 
-        <select id="select" value={selectedOption} onChange={handleChange}>
+        <select id="select" value={selectedOption} onChange={(e) => setSelectedOption(e.target.value)}>
             <option value="false">false</option>
             <option value="true">true</option>
         </select>
-        <button onClick={function(){
-            fetch("https://todo-backend-chy7.onrender.com/todo" ,{
+        <button onClick={async function(){
+            await fetch("https://todo-backend-chy7.onrender.com/todo" ,{
                 method:"POST",
                 body:JSON.stringify({ // JSON will be captial
                     title:title,
