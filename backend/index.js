@@ -19,7 +19,7 @@ app.post("/todo",async function(req,res){
     await todo.create({
         title:createPayload.title,
         description:createPayload.description,
-        completed:createPayload.completed === 'true'
+        completed:createPayload.completed
     })
     res.json({msg:"todo has been created"})
 })
