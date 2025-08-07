@@ -3,7 +3,7 @@ import { useState } from 'react';
 
 export function CreateTodo({setUpdate, update}){
     const [title , setTitle] = useState("")
-    const [description , setDescription] = useState("")
+    const [description , setDescription] = useState("false")
     //const [compleated , setCompleated] = useState("")
     const [selectedOption, setSelectedOption] = useState("");
     return <div>
