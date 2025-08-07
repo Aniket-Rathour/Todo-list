@@ -3,9 +3,9 @@ import { useState } from 'react';
 
 export function CreateTodo({setUpdate, update}){
     const [title , setTitle] = useState("")
-    const [description , setDescription] = useState("false")
+    const [description , setDescription] = useState("")
     //const [compleated , setCompleated] = useState("")
-    const [selectedOption, setSelectedOption] = useState("");
+    const [selectedOption, setSelectedOption] = useState("false");
     return <div>
         <input type="text" placeholder="title" onChange={function(e){
             setTitle(e.target.value);
