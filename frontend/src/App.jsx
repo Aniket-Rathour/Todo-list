@@ -21,7 +21,7 @@ function App() {
   return (
     <div>
       <CreateTodo setUpdate={setUpdate} update={update}></CreateTodo>
-      <Todos setUpdate={setUpdate} update={update} todos={todos}></Todos>
+      <Todos setTodos={setTodos} todos={todos}></Todos>
     </div>
   )    
 }
